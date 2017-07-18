@@ -1,0 +1,11 @@
+Package: thermocamTools
+Type: Package
+Title: thermocamTools - tools for managing our thermal data
+Version: 0.1
+Date: 2016-10-12
+Author: Daniel M. Griffith
+Maintainer: Daniel M. Griffith <griffith.dan@gmail.com>
+Description: This R package is for managing our Thermocam workflow.
+Depends: Thermimage, hexView, raster, sp
+Repository: NONE
+License: NONE
