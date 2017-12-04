@@ -1,4 +1,4 @@
-readThermocamRaw <- function(file, output = "raster"){
+readThermocamRaw <- function(file, output = "raster", AtmosT = 20, RH = 45){
 
   # INDICES FOR CALCULATING POSITIONS IN BINARY FILE. TABLE FROM: http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/FLIR.html#CameraInfo
     index_table <- data.frame(
@@ -96,10 +96,10 @@ readThermocamRaw <- function(file, output = "raster"){
     OD                <- camera_info$ObjectDistance                # object distance in metres
     FD                <- camera_info$FocusDistance                 # focus distance in metres
     ReflT             <- camera_info$ReflectedApparentTemperature  # Reflected apparent temperature
-    AtmosT            <- camera_info$AtmosphericTemperature        # Atmospheric temperature
+    # AtmosT            <- camera_info$AtmosphericTemperature        # Atmospheric temperature
     IRWinT            <- camera_info$IRWindowTemperature           # IR Window Temperature
     IRWinTran         <- camera_info$IRWindowTransmission          # IR Window transparency
-    RH                <- camera_info$RelativeHumidity              # Relative Humidity
+    # RH                <- camera_info$RelativeHumidity              # Relative Humidity
     h                 <- camera_info$RawThermalImageHeight         # sensor height (i.e. image height)
     w                 <- camera_info$RawThermalImageWidth          # sensor width (i.e. image width)  
   
