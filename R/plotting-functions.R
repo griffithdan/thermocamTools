@@ -34,6 +34,7 @@ plot.TxT <- function(Tcan,
       DOY.mask <- DOY %in% seq(doy.range[1], doy.range[2], 1)
         Tcan <- Tcan[DOY.mask]
         Tair <- Tair[DOY.mask]
+        hour <- hour[DOY.mask]
         group <- group[DOY.mask]
         DOY <- DOY[DOY.mask]
     }     
