@@ -6,6 +6,6 @@ Date: 2016-10-12
 Author: Daniel M. Griffith
 Maintainer: Daniel M. Griffith <griffith.dan@gmail.com>
 Description: This R package is for managing our Thermocam workflow.
-Depends: Thermimage, hexView, raster, sp
+Depends: Thermimage, hexView, raster, sp, RColorBrewer, plotrix, hysteresis
 Repository: NONE
 License: NONE
