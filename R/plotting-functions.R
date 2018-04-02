@@ -64,12 +64,12 @@ plot.TxT <- function(Tcan,
     
   # Legend
     labs.len <- length(unique(hour))
-    leg.labs <- c(min(hour),
+    leg.labs <- c(1,
                       rep(NA, 5),
                       6, rep(NA, 5),
                       12, rep(NA, 5),
                       18, rep(NA, 4),
-                  max(hour))
+                  23)
     usr.range <- par("usr")
     x.range <- usr.range[2] - usr.range[1]
     y.range <- usr.range[4] - usr.range[3] 
