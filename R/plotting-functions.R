@@ -64,7 +64,7 @@ plot.TxT <- function(Tcan,
     
   # Legend
     labs.len <- length(unique(hour))
-    leg.labs <- c(1,
+    leg.labs <- c(0,
                       rep(NA, 5),
                       6, rep(NA, 5),
                       12, rep(NA, 5),
